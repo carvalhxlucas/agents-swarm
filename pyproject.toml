@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=65.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agents-swarm"
+version = "0.1.0"
+description = "Agent Swarm Orchestrator – motor de orquestração multi-agentes assíncrono."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.7.0",
+    "redis>=5.0.0",
+    "SQLAlchemy>=2.0.0",
+    "asyncpg>=0.29.0",
+    "openai>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6.0",
+    "mypy>=1.10.0",
+]
+
